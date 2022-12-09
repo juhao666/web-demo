@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Show message</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<h1>Result</h1>
+
+<table>
+    <tr><td>填写的编号：</td><td><p th:text="${userID}"></p></td></tr>
+    <tr><td>填写的用户名：</td><td><p th:text="${username}"></p></td></tr>
+    <tr><td>填写的密码：</td><td><p th:text="${password}"></p></td></tr>
+    <tr><td>选中的性别：</td><td><p th:text="${sex}"></p></td></tr>
+    <tr><td>选中的部门：</td><td><p th:text="${dept}"></p></td></tr>
+    <tr><td>选中的兴趣：</td><td><p th:text="${interestStr}"></p></td></tr>
+    <tr><td>填写的说明：</td><td><p th:text="${note}"></p></td></tr>
+    <tr><td>隐藏域的内容：</td><td><p th:text="${hiddenField}"></p></td></tr>
+</table>
+<a href="/addHtmlForm">Submit another message</a>
+</body>
+</html>
